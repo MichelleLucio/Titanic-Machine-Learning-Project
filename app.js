@@ -27,3 +27,4 @@ function runEnter() {
   // that was entered in the form
   d3.select("h1>span").text(inputValue);
 }
+.listen(process.env.PORT || 5000)
