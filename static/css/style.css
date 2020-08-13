@@ -49,7 +49,7 @@ body {
   bottom: 5px;
   left: 150px;
   width: 35px;
-  color: white;
+  color: rgb(5, 2, 12);
 }
 
 /* Adding styles to the aside and filter form */
@@ -98,7 +98,7 @@ select {
   padding: 20px;
   margin: 0;
   background: black;
-  background-image: url("../images/nasa.jpg");
+  background-image: url("../images/titanic1.jpg");
   background-attachment: fixed;
   background-position: bottom center;
   background-size: cover;
@@ -120,7 +120,7 @@ select {
 /* input placeholder color changes */
 .form-control::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: #8e979f;
+  color: #918e9f;
 }
 
 .form-control::-moz-placeholder {
