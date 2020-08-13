@@ -1,56 +1,29 @@
-// from data.js
-let tableData = data;
+// Select the button
+var button = d3.select("#button");
 
-//select the body of table
-let tbody = d3.select('tbody');
+// Select the form
+var form = d3.select("#form");
 
-//loop thru data to put onto html
-data.forEach((ufo) => {
-    var row = tbody.append("tr");
-    Object.entries(ufo).forEach(([key, value]) => {
-      var cell = row.append("td");
-      cell.text(value);
-    });
-  });
+// Create event handlers for clicking the button or pressing the enter key
+button.on("click", runEnter);
+form.on("submit",runEnter);
 
-  // Select the button & form
-let button = d3.select("#filter-btn");
-let dateForm = d3.select(".form-control");
+// Create the function to run for both events
+function runEnter() {
 
-  //create event handlers
-button.on("click", runSearch);
-dateForm.on("click", runSearch);
+  // Prevent the page from refreshing
+  d3.event.preventDefault();
 
+  // Select the input element and get the raw HTML node
+  var inputElement = d3.select("#example-form-input");
 
-//function runSearch
-function runSearch() {
-    //prevent page from refreshing
-    d3.event.preventDefault();
-    //select input element
-    let dateInput = d3.select("#datetime");
-    //get value of input element
-    let dateinputValue = dateInput.property("value");
-    console.log("search has been clicked");
-    console.log(dateinputValue);
-    console.log(tableData);
+  // Get the value property of the input element
+  var inputValue = inputElement.property("value");
 
-    //filter to the value
-    let filterDate = tableData.filter(function(ufo){
-        return ufo.datetime === dateinputValue});
-    ////let filterDate = tableData.filter(ufo => ufo.datetime === dateinputValue);
-      console.log(filterDate);
+  // Print the value to the console
+  console.log(inputValue);
 
- 
-    //select table body & clear data out
-    let tbody = d3.select('tbody');
-    tbody.text("");
-
-
-    //loop thru filtered data to put onto html
-    filterDate.forEach((ufo) => {
-        var row = tbody.append("tr");
-        Object.entries(ufo).forEach(([key, value]) => {
-        var cell = row.append("td");
-        cell.text(value);
-    });
-})};
+  // Set the span tag in the h1 element to the text
+  // that was entered in the form
+  d3.select("h1>span").text(inputValue);
+}
