@@ -22,7 +22,7 @@ body {
   min-height: 100%;
   padding-top: 10px;
   overflow: auto;
-  color:blue;
+  color:orangered;
 }
 
 
@@ -30,7 +30,7 @@ body {
 .navbar {
   padding: 5px;
   margin: 0;
-  color:red;
+  color:orangered;
 }
 
 
@@ -38,7 +38,7 @@ body {
   position: relative;
   text-align: match-parent;
   padding: 5px;
-  color: blue;
+  color: orangered;
 
 }
 

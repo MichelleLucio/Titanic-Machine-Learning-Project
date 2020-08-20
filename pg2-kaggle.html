@@ -25,7 +25,7 @@
           <a class="nav-item nav-link" href="pg3-passengers.html">     *Passengers</a>
           <a class="nav-item nav-link" href="pg4-crew.html">     *Crew</a>
           <a class="nav-item nav-link" href="pg5-orchestra.html">     *Orchestra</a>
-          <a class="nav-item nav-link" href="pg6-test.html">     *Test Page</a>
+          <!-- <a class="nav-item nav-link" href="pg6-test.html">     *Test Page</a> -->
         </div>
       </div>
     </nav>
@@ -48,52 +48,123 @@
                      <p>This competition started in 2012. <br>
                        By joining, you or your team can submit an entry to determine how accurate your
                        machine learning process is.<br><br>
-                       The Data consists of 2 csv files, one training set and one test set.<br>
-                       The training set contains 891 passengers & the test set contains 418 passengers.<br>
-                       Column information includes: ID, survived (this column missing from test csv), passenger class (1, 2, 3),
-                       passenger name, gender,<br> age, family ties (sibling, spouse, parent, children), 
-                       ticket number, fare amount, cabin, embarking port.
-
-                    
+                       The Data consists of 2 csv files, one training set (891 passengers) and one test set (418 passengers).<br><br><br>
+                                      
                    </div>
           </div></div>
           
-        </div>
-      </div>
-
       <div class="container-fluid">
         <div class="row">   
           <div class="col-lg-6">
-            <p><a href="pg3-passengers.html">
-            <img src="static/images/AgeGroupGraph.png" class="rounded float-center" alt="AgeGroupGraph"> </a>
-          </p>
+            <div class="card" style="width: 18rem;">
+              <img src="static/images/AgeGroupGraph.png" class="card-img-top text-center" alt="AgeGroupGraph">
+              <div class="card-body">
+                <p class="card-text text-center">Survival Numbers by Age</p>
+              </div>
+            </div>
         </div>
         <div class="col-lg-6">
-          <p><a href="pg3-passengers.html">
-          <img src="static/images/EmbarkedSurvivalGraph.png" class="rounded float-center" alt="EmbarkedSurvivalGraph"> </a>
+          <p>Columns:<br>
+            Survival:   Survival (only in training data set)<br>
+            PassengerId: Unique ID of a passenger.<br>
+            Pclass:   Ticket class    <br>
+            Sex:   Sex    <br>
+            Age:   Age in years    <br>
+            Sibsp:   # of siblings / spouses aboard the Titanic (deleted)<br>
+            Parch:   # of parents / children aboard the Titanic (deleted)<br>
+            Ticket:   Ticket number (deleted)<br>
+            Fare:   Passenger fare (deleted)<br>
+            Cabin:   Cabin number (deleted)<br>
+            Embarked:   Port of Embarkation (deleted)<br><br>
         </p>
       </div>
         </div></div>
 
+
+      <div class="container-fluid">
+        <div class="row">   
+
+        <div class="col-lg-5">
+          <p><a href="pg2-kaggle.html">
+          <img src="static/images/EmbarkedSurvivalGraph.png" class="rounded float-center" alt="EmbarkedSurvivalGraph"> </a>
+        </p>
+      </div>
+      <div class="col-lg-7">
+        <p><a href="pg2-kaggle.html">
+        <img src="static/images/PassengerClassSurvivalGraph.png" class="rounded float-center" alt="PassengerClassSurvivalGraph"> </a>
+      </p>
+    </div>
+        </div></div>
+        <div class="row">
+          <div class="col-lg-10">
+              <div class="box text-center">
+                  <p>Survival by Port of Embarkation (Total Passengers and Separated by Class) <br>
+                    C(1) = Cherbourg, Q(2) = Queenstown, S(3) = Southampton<br><br><br><br>
+                  </p>               
+                   </div>
+          </div></div>
+
         <div class="container-fluid">
           <div class="row">   
             <div class="col-lg-4">
-              <p><a href="pg3-passengers.html">
-              <img src="static/images/KneighborsGraph.png" class="rounded float-center" alt="KneighborsGraph"> </a>
+              <p><a href="pg2-kaggle.html">
+              <img src="static/images/KneighborsGraph.png" class="rounded float-center text-center" alt="KneighborsGraph"> </a>
             </p>
           </div>
-          <div class="col-lg-8">
-            <p><a href="pg3-passengers.html">
-            <img src="static/images/PassengerClassSurvivalGraph.png" class="rounded float-center" alt="PassengerClassSurvivalGraph"> </a>
+          <div class="col-lg-3">
+            <p><a href="pg2-kaggle.html">
+            <img src="static/images/SurvivalByClass.JPG" class="rounded float-center text-center" alt="SurvivalByClass"> </a>
           </p>
         </div>
+        <div class="col-lg-3">
+          <p><a href="pg2-kaggle.html">
+          <img src="static/images/SurvivalBySex.JPG" class="rounded float-center text-center" alt="SurvivalBySex"> </a><br>
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+            <div class="box text-center">
+                <p>Machine Learning Analysis & Kaggle Submission Score
+                 <br><br>
+                </p>               
+                 </div>
+        </div></div>
           </div></div>
+
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-3">
+                <p>
+              </p>
+            </div>
+                <div class="col-lg-6">
+                    <p><a href="pg2-kaggle.html">
+                    <img src="static/images/ML jupyter_edit2.PNG" class="img-fluid center" alt="machine learning">
+                    </a>
+                  </p>
+                </div>
+                <div class="col-lg-3">
+                  <p>
+                </p>
+              </div>
+              </div>
+
+          <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p><a href="pg2-kaggle.html">
+                    <img src="static/images/kaggle_results_edit2.png" class="img-fluid" alt="kaggle score">
+                    </a>
+                  </p>
+                </div>
+
+              </div>
 </div>
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
 
-  <script src="app.js"></script>
+  
 </body>
 
 </html>
